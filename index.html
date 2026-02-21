@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Share Card</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(to right, #0f2027, #2c5364);
+        }
+
+        .container{
+            text-align:center;
+        }
+
+        .card{
+            position:relative;
+            display:inline-block;
+            background:#fff;
+            padding:10px;
+            border-radius:20px;
+        }
+
+        .card img{
+            width:250px;
+            height:300px;
+            object-fit:cover;
+            border-radius:15px;
+            display:block;
+        }
+
+        /* Bottom triangle pointer */
+        .card::after{
+            content:"";
+            position:absolute;
+            bottom:-15px;
+            left:50%;
+            transform:translateX(-50%);
+            border-width:15px 15px 0 15px;
+            border-style:solid;
+            border-color:#fff transparent transparent transparent;
+        }
+
+        .share-btn{
+            margin-top:40px;
+            padding:12px 80px;
+            border:none;
+            border-radius:30px;
+            background:#eee;
+            color:#555;
+            font-weight:bold;
+            letter-spacing:2px;
+            cursor:pointer;
+        }
+
+        .share-btn:hover{
+            background:#ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="D:\whatsapp 2\160.jpeg" alt="Profile Image">
+        </div>
+
+        <button class="share-btn">SHARE</button>
+    </div>
+
+</body>
+</html>
